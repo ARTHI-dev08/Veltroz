@@ -1,0 +1,14 @@
+backend/
+.git/
+.github/
+.vscode/
+*.md
+*.txt
+*.xml
+*.java
+*.properties
+*.pom
+build.html
+build1.html
+Ai chat frontend.html
+pages/
