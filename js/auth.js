@@ -89,7 +89,7 @@ function signupUser() {
       saveAuthToken(response.token);
       saveAuthUser(response);
       alert('Signup successful. Welcome, ' + response.username + '!');
-      window.location.href = 'build.html';
+      window.location.href = 'index.html';
     })
     .catch(error => {
       alert('Signup failed: ' + error.message);
@@ -115,7 +115,7 @@ function loginUser() {
       saveAuthToken(response.token);
       saveAuthUser(response);
       alert('Login successful. Welcome back, ' + response.username + '!');
-      window.location.href = 'build.html';
+      window.location.href = 'index.html';
     })
     .catch(error => {
       alert('Login failed: ' + error.message);
@@ -133,7 +133,7 @@ function redirectIfLoggedIn() {
   const path = window.location.pathname.toLowerCase();
   const loginPaths = ['/login.html', '/signup.html', '/index.html'];
   if (token && loginPaths.some(loginPath => path.endsWith(loginPath))) {
-    window.location.href = 'build.html';
+    window.location.href = 'index.html';
   }
 }
 
